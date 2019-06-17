@@ -40,7 +40,7 @@ public class TankManager : MonoBehaviour
 
     public void Movement (Vector3 movementDirection)
     {
-        Vector3 moveDirection = data.transform.TransformDirection(movementDirection);
+        Vector3 moveDirection = data.tf.TransformDirection(movementDirection);
 
         tankController.SimpleMove(moveDirection * data.movementSpeed);
     }
@@ -49,11 +49,22 @@ public class TankManager : MonoBehaviour
     
     public void Rotate (float direction)
     {
-        data.transform.Rotate(new Vector3(0, direction * data.roatationSpeed * Time.deltaTime, 0));
+        data.tf.Rotate(new Vector3(0, direction * data.roatationSpeed * Time.deltaTime, 0));
     }
 
     ////////////////////////////////////////////////////////////////////////////////////
     
+    public void RotateTowards(Vector3 lookvector)
+    {
+        // finds the vector to target
+        Vector3 vectorToTarget = lookvector;
+        // Finds the quaternion to look down that vector
+        Quaternion targetQuaternion = Quaternion.LookRotation(vectorToTarget, Vector3.up);
+        // Sets the rotation to "partway towards" that quaternion 
+        data.tf.rotation =
+            Quaternion.RotateTowards(data.tf.rotation, targetQuaternion, data.roatationSpeed * Time.deltaTime);
+                
+    }
     
 }
 

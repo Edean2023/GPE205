@@ -9,9 +9,10 @@ public class TankData : MonoBehaviour
 
     // list of the different components that other scripts can pull from
     [Header("Comps")]
-    public Transform transform;
+    public Transform tf;
     public TankManager mover;
     public GameObject TankBullet1;
+    public GameObject TankBullet2;
 
 
     ////////////////////////////////////////////////////////////////////////////////////
@@ -28,7 +29,7 @@ public class TankData : MonoBehaviour
     // tells what transform and mover do
     private void Awake()
     {
-        transform = GetComponent<Transform>();
+        tf = GetComponent<Transform>();
         mover = GetComponent<TankManager>();
     }
 
