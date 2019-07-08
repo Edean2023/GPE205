@@ -297,7 +297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16bbb116cdc7c614f990d4a28d95f650, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1325773363}
+  player: {fileID: 1325773359}
   maxAngle: 45
   maxRadius: 10
 --- !u!1 &254928491
@@ -995,6 +995,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 7899417321670508894, guid: 8dd667ebfc98a184e9d8179042885615,
+        type: 3}
+      propertyPath: movementSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7899417321670508894, guid: 8dd667ebfc98a184e9d8179042885615,
+        type: 3}
+      propertyPath: reverseMovementSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7899417321670508894, guid: 8dd667ebfc98a184e9d8179042885615,
+        type: 3}
+      propertyPath: roatationSpeed
+      value: 270
+      objectReference: {fileID: 0}
     - target: {fileID: 7448956856714437327, guid: 8dd667ebfc98a184e9d8179042885615,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1084,21 +1099,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 7899417321670508894, guid: 8dd667ebfc98a184e9d8179042885615,
-        type: 3}
-      propertyPath: movementSpeed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7899417321670508894, guid: 8dd667ebfc98a184e9d8179042885615,
-        type: 3}
-      propertyPath: reverseMovementSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7899417321670508894, guid: 8dd667ebfc98a184e9d8179042885615,
-        type: 3}
-      propertyPath: roatationSpeed
-      value: 270
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3661102411458996979, guid: 8dd667ebfc98a184e9d8179042885615, type: 3}
@@ -1305,7 +1305,7 @@ PrefabInstance:
     - target: {fileID: 7974005530943242957, guid: bdb989d8d0d7e3942b2422e33472f19e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.3474172
+      value: 1.55
       objectReference: {fileID: 0}
     - target: {fileID: 7974005530943242957, guid: bdb989d8d0d7e3942b2422e33472f19e,
         type: 3}
@@ -2014,6 +2014,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tank Four
       objectReference: {fileID: 0}
+    - target: {fileID: 8685395482797998751, guid: 5f46493315893d5409baea886c02f27b,
+        type: 3}
+      propertyPath: movementSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8685395482797998751, guid: 5f46493315893d5409baea886c02f27b,
+        type: 3}
+      propertyPath: reverseMovementSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8685395482797998751, guid: 5f46493315893d5409baea886c02f27b,
+        type: 3}
+      propertyPath: roatationSpeed
+      value: 90
+      objectReference: {fileID: 0}
     - target: {fileID: 511344565641955639, guid: 5f46493315893d5409baea886c02f27b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2068,21 +2083,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8685395482797998751, guid: 5f46493315893d5409baea886c02f27b,
-        type: 3}
-      propertyPath: movementSpeed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8685395482797998751, guid: 5f46493315893d5409baea886c02f27b,
-        type: 3}
-      propertyPath: reverseMovementSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8685395482797998751, guid: 5f46493315893d5409baea886c02f27b,
-        type: 3}
-      propertyPath: roatationSpeed
-      value: 90
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f46493315893d5409baea886c02f27b, type: 3}
@@ -2202,21 +2202,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -3363299664598947908, guid: 991ad4a8b05bfe841988aa30494d3d8a,
-        type: 3}
-      propertyPath: movementSpeed
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -3363299664598947908, guid: 991ad4a8b05bfe841988aa30494d3d8a,
-        type: 3}
-      propertyPath: reverseMovementSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: -3363299664598947908, guid: 991ad4a8b05bfe841988aa30494d3d8a,
-        type: 3}
-      propertyPath: roatationSpeed
-      value: 50
-      objectReference: {fileID: 0}
     - target: {fileID: 4996763770747291989, guid: 991ad4a8b05bfe841988aa30494d3d8a,
         type: 3}
       propertyPath: m_Name
@@ -2231,6 +2216,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -3363299664598947908, guid: 991ad4a8b05bfe841988aa30494d3d8a,
+        type: 3}
+      propertyPath: movementSpeed
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -3363299664598947908, guid: 991ad4a8b05bfe841988aa30494d3d8a,
+        type: 3}
+      propertyPath: reverseMovementSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -3363299664598947908, guid: 991ad4a8b05bfe841988aa30494d3d8a,
+        type: 3}
+      propertyPath: roatationSpeed
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7704489010501373363, guid: 991ad4a8b05bfe841988aa30494d3d8a,
         type: 3}
