@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(TankData))]
 public class TankManager : MonoBehaviour
 {
     // allows this script to pull components and variables from TankData

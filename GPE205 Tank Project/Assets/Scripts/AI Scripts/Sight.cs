@@ -4,16 +4,20 @@ using UnityEngine;
 
 public class Sight : MonoBehaviour
 {
+    public AIController ai;
+
     public GameObject player;
     private Transform Playertf;
     private Transform foundPlayer;
     public float maxAngle;
     public float maxRadius;
 
-    private static bool isInFov = false;
+    public static bool isInFov = false;
 
     private void Start()
     {
+        ai = GetComponent<AIController>();
+
         foundPlayer = GameObject.FindGameObjectWithTag("Player").transform;
         Playertf = player.GetComponent<Transform>(); //LMB
     }
@@ -101,15 +105,14 @@ public class Sight : MonoBehaviour
     {
         Playertf = player.GetComponent<Transform>();
         isInFov = inFOV(transform, Playertf, maxAngle, maxRadius);
-  
-    }
+        
 
-    private void Attack()
-    {
         if (isInFov == true)
         {
-            
+           
         }
+       
     }
+
 
 }

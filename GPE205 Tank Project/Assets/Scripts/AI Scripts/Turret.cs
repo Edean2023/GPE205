@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Turret : AIController
+public class Turret : MonoBehaviour
 {
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +15,6 @@ public class Turret : AIController
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
 }

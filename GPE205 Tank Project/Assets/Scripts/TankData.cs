@@ -31,6 +31,7 @@ public class TankData : MonoBehaviour
     {
         tf = GetComponent<Transform>();
         mover = GetComponent<TankManager>();
+        
     }
 
     ////////////////////////////////////////////////////////////////////////////////////
