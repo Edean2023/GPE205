@@ -5,12 +5,10 @@ using UnityEngine;
 public class Partol : AIController
 {
     public TankData target;
-    public Sight see;
     // Start is called before the first frame update
     void Start()
     {
         target = GetComponent<TankData>();
-        see = GetComponent<Sight>();
         currentPatrolpoint = 0;
     }
 
@@ -36,7 +34,7 @@ public class Partol : AIController
                 Patrol();
                 if (Vector3.Distance(target.tf.position, pawn.tf.position) < 7.0f)
                 {
-                  //  ChangeState(AIstates.Chase);
+                    ChangeState(AIstates.Chase);
                 }
                 break;
 
@@ -45,7 +43,7 @@ public class Partol : AIController
                
                 if (Vector3.Distance(target.tf.position, pawn.tf.position) > 10.0f)
                 {
-                //    ChangeState(AIstates.Patrol);                  
+                    ChangeState(AIstates.Patrol);                  
                 }
                 break;
         }

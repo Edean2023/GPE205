@@ -11,9 +11,7 @@ public class TankData : MonoBehaviour
     [Header("Comps")]
     public Transform tf;
     public TankManager mover;
-    public GameObject TankBullet1;
-    public GameObject TankBullet2;
-
+    public Shooter shoot;
 
     ////////////////////////////////////////////////////////////////////////////////////
 
@@ -23,6 +21,13 @@ public class TankData : MonoBehaviour
     public float reverseMovementSpeed;
     public float roatationSpeed;
     public float health = 2;
+    public float fireCooldown = 1.5f;
+
+    ////////////////////////////////////////////////////////////////////////////////////
+
+    [Header("GameObjects")]
+    public GameObject bulletPrefab;
+
     ////////////////////////////////////////////////////////////////////////////////////
 
     // is called when the script instance is loaded
@@ -31,7 +36,7 @@ public class TankData : MonoBehaviour
     {
         tf = GetComponent<Transform>();
         mover = GetComponent<TankManager>();
-        
+        shoot = GetComponent<Shooter>();
     }
 
     ////////////////////////////////////////////////////////////////////////////////////

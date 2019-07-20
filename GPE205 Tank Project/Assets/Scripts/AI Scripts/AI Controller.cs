@@ -8,7 +8,12 @@ public class AIController : MonoBehaviour
     // this will allow the developer to easily change what state an AI tank will have
     public enum AIstates
     {
-        Patrol, Chase, Flee, Idle
+        Patrol, Chase, Flee, Idle, Shoot
+    }
+
+    public enum AItype
+    {
+        Guard, Turret, Ghost, Coward
     }
 
     // this will allow the developer to easily change how the AI avoids obstacles
@@ -145,6 +150,14 @@ public class AIController : MonoBehaviour
         pawn.mover.RotateTowards(awayVector);
         // Move forward
         pawn.mover.Movement(Vector3.forward);
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////
+
+    public void Shoot()
+    {
+        // Shoot
+        pawn.shoot.Shoot(pawn.bulletPrefab);
     }
 
     ////////////////////////////////////////////////////////////////////////////////////

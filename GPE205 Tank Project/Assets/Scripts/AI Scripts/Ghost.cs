@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ghost : AIController
+public class Ghost : MonoBehaviour
 {
+    public TankData pawn;
     Transform Player;
     // Start is called before the first frame update
     void Start()

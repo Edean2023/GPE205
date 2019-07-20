@@ -127,9 +127,9 @@ MonoBehaviour:
   mover: {fileID: 0}
   TankBullet1: {fileID: 0}
   TankBullet2: {fileID: 0}
-  movementSpeed: 0
-  reverseMovementSpeed: 0
-  roatationSpeed: 0
+  movementSpeed: 1
+  reverseMovementSpeed: 5
+  roatationSpeed: 270
   health: 2
 --- !u!114 &91262325404966165
 MonoBehaviour:
