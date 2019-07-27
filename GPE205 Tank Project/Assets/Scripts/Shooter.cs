@@ -32,9 +32,11 @@ public class Shooter : MonoBehaviour
         {
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation) as GameObject;
             Bullet bulletData = bullet.GetComponent<Bullet>();
+            
             if (bulletData != null)
             {
                 bulletData.shooter = data;
+                
             }
 
             lastFireTime = Time.time;

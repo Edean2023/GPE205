@@ -34,16 +34,18 @@ public class Partol : AIController
                 Patrol();
                 if (Vector3.Distance(target.tf.position, pawn.tf.position) < 7.0f)
                 {
-                    ChangeState(AIstates.Chase);
+                    ChangeState(AIstates.Shoot);
                 }
                 break;
 
-            case AIstates.Chase:
+            case AIstates.Shoot:
                 SeekPoint(target.tf.position);
-               
-                if (Vector3.Distance(target.tf.position, pawn.tf.position) > 10.0f)
+                // Do a special "Update" for that state
+                Shoot();
+
+                if (Vector3.Distance(target.tf.position, pawn.tf.position) > 7.0f)
                 {
-                    ChangeState(AIstates.Patrol);                  
+                    ChangeState(AIstates.Patrol);
                 }
                 break;
         }

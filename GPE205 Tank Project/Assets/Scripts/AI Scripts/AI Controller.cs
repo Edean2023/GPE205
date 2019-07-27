@@ -87,6 +87,7 @@ public class AIController : MonoBehaviour
         {
             case AIAvoidanceState.none:
                 // chases
+
                 Vector3 targetVector = (target.position - pawn.tf.position).normalized;
                 pawn.mover.RotateTowards(targetVector);
                 pawn.mover.Movement(Vector3.forward);
@@ -176,6 +177,11 @@ public class AIController : MonoBehaviour
             else
             {
                 currentPatrolpoint--;
+            }
+
+            if (currentPatrolpoint < 0)
+            {
+                currentPatrolpoint = 0;
             }
             // if the AI is out of the bounds of the patrol points
             if (currentPatrolpoint >= patrolpoints.Count || currentPatrolpoint < 0)

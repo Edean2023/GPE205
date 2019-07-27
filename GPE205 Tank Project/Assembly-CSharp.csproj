@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\AI Scripts\AI Controller.cs" />
     <Compile Include="Assets\Scripts\AI Scripts\Coward.cs" />
     <Compile Include="Assets\Scripts\AI Scripts\Ghost.cs" />
+    <Compile Include="Assets\Scripts\AI Scripts\GhostController.cs" />
     <Compile Include="Assets\Scripts\AI Scripts\Partol.cs" />
     <Compile Include="Assets\Scripts\AI Scripts\Pursue.cs" />
     <Compile Include="Assets\Scripts\AI Scripts\Sight.cs" />
