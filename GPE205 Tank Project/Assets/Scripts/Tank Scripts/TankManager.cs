@@ -11,9 +11,12 @@ public class TankManager : MonoBehaviour
 
     ////////////////////////////////////////////////////////////////////////////////////
 
+    GameObject powerup;
+    
     // Start is called before the first frame update
     void Start()
     {
+        powerup = GameObject.FindWithTag("powerup");
         data = GetComponent<TankData>();
         tankController = GetComponent<CharacterController>();
     }
@@ -23,6 +26,13 @@ public class TankManager : MonoBehaviour
     private void OnTriggerEnter()
     {
         data.health--;
+        
+        // makes sure the player doesn't lose health when picking up a powerup
+        if (powerup) 
+        {
+            data.health++;
+        }
+        // if health is less than zero kill the game object 
         if (data.health <= 0)
         {
             Destroy(gameObject);

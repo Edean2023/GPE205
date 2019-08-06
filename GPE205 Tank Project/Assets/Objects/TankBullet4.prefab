@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 9026570509886221323}
   m_Layer: 10
   m_Name: TankBullet4
-  m_TagString: Bullet
+  m_TagString: bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
