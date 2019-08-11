@@ -1,2 +1,0 @@
-This tank will move on the outside walls and flee if it sees or hears the player.
-This tank can be considered non hostile as it will always run away.

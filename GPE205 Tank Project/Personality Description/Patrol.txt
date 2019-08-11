@@ -1,2 +1,0 @@
-This tank will patrol the inside of the walls and pursue if it sees or hears the player.
-If the tank cant see or hear the player, it will return to patroling.

@@ -1,3 +1,0 @@
-This tank will start by moving towards the middle of the map and spin in a circle.
-The tank will only purse the player if it sees or hears the player.
-If the tank cant see or hear the player then the tank will stop where it is and return to spinning.

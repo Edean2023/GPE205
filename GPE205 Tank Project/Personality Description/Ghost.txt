@@ -1,2 +1,0 @@
-This tank will constantly move towards the player but rather slowly.
-It doesnt need to see or hear since it always knows where the player is and it can move through walls.
