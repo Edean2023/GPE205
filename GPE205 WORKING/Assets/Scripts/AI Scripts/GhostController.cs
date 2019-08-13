@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GhostController : AIController
 {
@@ -15,7 +16,12 @@ public class GhostController : AIController
     // Update is called once per frame
     void Update()
     {
-        if (target == null) { Destroy(gameObject); }
+        if (target == null)
+        {
+
+            SceneManager.LoadScene("GameOver");
+            Destroy(gameObject);
+        }
         else
         {
 

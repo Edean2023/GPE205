@@ -22,7 +22,13 @@ public class Turret : AIController
     // Update is called once per frame
     void Update()
     {
-        if (target == null) { Destroy(gameObject); }
+        if (target == null)
+        {
+
+            SceneManager.LoadScene("GameOver");
+            Destroy(gameObject);
+        }
+        
         else
         {
 

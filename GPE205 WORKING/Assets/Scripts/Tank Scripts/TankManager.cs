@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(TankData))]
 public class TankManager : MonoBehaviour
@@ -12,16 +13,16 @@ public class TankManager : MonoBehaviour
     ////////////////////////////////////////////////////////////////////////////////////
 
     GameObject powerup;
-    GameObject deathstick;
-    
+
+
     // Start is called before the first frame update
     void Start()
     {
         powerup = GameObject.FindWithTag("powerup");
-        deathstick = GameObject.FindWithTag("DeathStick");
         data = GetComponent<TankData>();
         tankController = GetComponent<CharacterController>();
     }
+
 
     ////////////////////////////////////////////////////////////////////////////////////
 
@@ -30,6 +31,7 @@ public class TankManager : MonoBehaviour
          data.health--; 
    
         // if health is less than zero kill the game object 
+       
         if (data.health <= 0)
         {
             Destroy(gameObject);
@@ -41,7 +43,10 @@ public class TankManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-   
+        if (GameObject.FindWithTag("Enemy") == null && GameObject.FindWithTag("Player") != null)
+        {
+            SceneManager.LoadScene("Win");
+        }
     }
 
     ////////////////////////////////////////////////////////////////////////////////////
@@ -73,7 +78,7 @@ public class TankManager : MonoBehaviour
             Quaternion.RotateTowards(data.tf.rotation, targetQuaternion, data.roatationSpeed * Time.deltaTime);
                 
     }
-    
+
 }
 
 

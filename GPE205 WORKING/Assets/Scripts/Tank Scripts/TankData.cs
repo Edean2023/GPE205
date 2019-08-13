@@ -28,7 +28,6 @@ public class TankData : MonoBehaviour
 
     [Header("GameObjects")]
     public GameObject bulletPrefab;
-    public GameObject thisTank;
 
     ////////////////////////////////////////////////////////////////////////////////////
 
@@ -57,9 +56,5 @@ public class TankData : MonoBehaviour
        
     }
 
-   /* public static implicit operator TankData(GameObject v)
-    {
-        throw new NotImplementedException();
-    }
-    */
+  
 }

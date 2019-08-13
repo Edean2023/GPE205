@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Coward : AIController
 {
@@ -15,7 +16,12 @@ public class Coward : AIController
     // Update is called once per frame
     void Update()
     {
-        if (target == null) { Destroy(gameObject); }
+        if (target == null)
+        {
+
+            SceneManager.LoadScene("GameOver");
+            Destroy(gameObject);
+        }
         else
         {
 

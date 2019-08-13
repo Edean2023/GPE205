@@ -6,10 +6,11 @@ public class Inputs : MonoBehaviour
 {
     // sets the enum for the 2 different control schemes 
     // makes it easy to switch between the two in Unity
-    public enum Controls {WASD, Arrows};
+    public enum Controls {WASD, Arrows, None};
 
     // allows this script to pull components and variables from TankData
     public TankData pawn;
+    public AudioSource someSound;
     public Controls controls;
 
     ////////////////////////////////////////////////////////////////////////////////////
@@ -62,6 +63,7 @@ public class Inputs : MonoBehaviour
                 pawn.mover.Rotate(pawn.roatationSpeed * Time.deltaTime);
             }
 
+           
             else if (controls == Controls.Arrows)
             {
                 // set the movement for Up Arrow to forward
@@ -88,7 +90,6 @@ public class Inputs : MonoBehaviour
                     pawn.mover.Rotate(pawn.roatationSpeed * Time.deltaTime);
                 }
             }
-
             // tells the mover to move to the final direction
             pawn.mover.Movement(moveDirection);
 

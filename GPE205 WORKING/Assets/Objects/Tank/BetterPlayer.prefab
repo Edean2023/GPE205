@@ -368,12 +368,11 @@ MonoBehaviour:
   shoot: {fileID: 0}
   movementSpeed: 4
   reverseMovementSpeed: 5
-  roatationSpeed: 90
-  health: 2
+  roatationSpeed: 180
+  health: 5
   fireCooldown: 1.5
   bulletPrefab: {fileID: 4510366313966304158, guid: dcbf4f98a13993a41812e5c00b4d7626,
     type: 3}
-  thisTank: {fileID: 0}
 --- !u!114 &2654730745006243723
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -612,4 +611,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pawn: {fileID: 816663618446716467}
+  someSound: {fileID: 6640077962558478718, guid: da61f6e6f8677484aa9276a7300ab98a,
+    type: 3}
   controls: 0

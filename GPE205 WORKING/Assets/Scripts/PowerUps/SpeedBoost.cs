@@ -25,7 +25,7 @@ public class SpeedBoost : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("I have the suicide");
+        
 
         other.gameObject.GetComponent<TankData>().health++;
         // get the powerup controller from the object that entered 
