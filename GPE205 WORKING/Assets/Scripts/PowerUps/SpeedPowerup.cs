@@ -5,6 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class SpeedPowerup : Powerup
 {
+
     // set float for adjustable speed
     public float boostSpeed;
 

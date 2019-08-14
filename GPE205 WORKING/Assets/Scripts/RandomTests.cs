@@ -6,6 +6,7 @@ using Random = UnityEngine.Random;
 
 public class RandomTests : MonoBehaviour
 {
+    
     // sets default seed to 100
     public int seed = 100;
     // adds a map of day button 
@@ -37,6 +38,8 @@ public class RandomTests : MonoBehaviour
             Random.InitState(seed);
         }
     }
+
+   
 
     // Update is called once per frame
     void Update()

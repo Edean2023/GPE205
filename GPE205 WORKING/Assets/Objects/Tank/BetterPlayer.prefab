@@ -386,6 +386,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerups: []
+  speedSound: {fileID: 7578222099194143277, guid: bb6488e294d645b4689e1a2b563fb325,
+    type: 3}
 --- !u!114 &816663618446716466
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class SpeedBoost : MonoBehaviour
 {
-    
     // reference SpeedPowerup
     public SpeedPowerup powerup;
     
@@ -35,6 +34,7 @@ public class SpeedBoost : MonoBehaviour
         {
             // apply powerup to object
             tempPUC.AddPowerup(powerup);
+            
             // destroy the pickup
             Destroy(gameObject);
         }

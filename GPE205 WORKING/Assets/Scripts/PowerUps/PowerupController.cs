@@ -5,6 +5,7 @@ using UnityEngine;
 public class PowerupController : MonoBehaviour
 {
     public List<Powerup> powerups;
+    
 
     ////////////////////////////////////////////////////////////////////////////////////
 
@@ -51,6 +52,7 @@ public class PowerupController : MonoBehaviour
 
     public void RemovePowerup(Powerup powerup)
     {
+        
         // calls the remove
         powerup.OnRemovePowerup(gameObject);
         // remove the powerup from the list
@@ -61,6 +63,7 @@ public class PowerupController : MonoBehaviour
 
     public void AddPowerup(Powerup powerup)
     {
+       
         // adds the powerup to the list
         powerups.Add(powerup);
         // call the apply for that powerup
