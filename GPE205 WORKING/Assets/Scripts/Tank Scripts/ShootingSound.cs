@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class ShootingSound : MonoBehaviour
 {
-
+    public TankData data;
     public AudioSource sound;
+    public AudioSource deathSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,5 +21,10 @@ public class ShootingSound : MonoBehaviour
         {
             sound.Play();
         }
+        if (Input.GetKeyDown(KeyCode.RightControl))
+        {
+            sound.Play();
+        }
+
     }
 }

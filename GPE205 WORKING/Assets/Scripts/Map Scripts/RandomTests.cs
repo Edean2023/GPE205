@@ -6,7 +6,6 @@ using Random = UnityEngine.Random;
 
 public class RandomTests : MonoBehaviour
 {
-    
     // sets default seed to 100
     public int seed = 100;
     // adds a map of day button 
@@ -17,10 +16,11 @@ public class RandomTests : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         // gets the current date
         DateTime currentTime = DateTime.Now.Date;
 
-        // if map of day is not selected
+        // if map of day is selected
         if (map_of_day)
         {
             // use map of day seed

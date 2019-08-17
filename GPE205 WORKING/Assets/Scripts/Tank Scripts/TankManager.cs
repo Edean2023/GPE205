@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 [RequireComponent(typeof(TankData))]
 public class TankManager : MonoBehaviour
 {
+   
     // allows this script to pull components and variables from TankData
     public TankData data;
     private CharacterController tankController;
@@ -13,7 +14,6 @@ public class TankManager : MonoBehaviour
     ////////////////////////////////////////////////////////////////////////////////////
 
     GameObject powerup;
-
 
     // Start is called before the first frame update
     void Start()
@@ -28,12 +28,16 @@ public class TankManager : MonoBehaviour
 
      private void OnTriggerEnter()
      {
-         data.health--; 
+        data.health--;
    
         // if health is less than zero kill the game object 
        
         if (data.health <= 0)
         {
+            if (GameObject.FindWithTag("Enemy"))
+            {
+                Score.scoreValue += 10;
+            }
             Destroy(gameObject);
         }
     }
@@ -43,9 +47,17 @@ public class TankManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameObject.FindWithTag("Enemy") == null && GameObject.FindWithTag("Player") != null)
+        if (GameObject.FindWithTag("Enemy") == null && 
+             GameObject.FindWithTag("Player 2")== null && 
+            GameObject.FindWithTag("Player") != null)
         {
-            SceneManager.LoadScene("Win");
+            SceneManager.LoadScene("Player1Win");
+        }
+        if (GameObject.FindWithTag("Enemy") == null &&
+             GameObject.FindWithTag("Player") == null &&
+            GameObject.FindWithTag("Player 2") != null)
+        {
+            SceneManager.LoadScene("Player2Win");
         }
     }
 

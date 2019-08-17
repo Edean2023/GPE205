@@ -11,6 +11,11 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Level Gen");
     }
 
+    public void PlayMultiPlayer()
+    {
+        SceneManager.LoadScene("MultiPlayer");
+    }
+
     public void QuitGame()
     {
         Debug.Log("Quit");

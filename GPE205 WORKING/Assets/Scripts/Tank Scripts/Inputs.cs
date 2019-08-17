@@ -6,11 +6,10 @@ public class Inputs : MonoBehaviour
 {
     // sets the enum for the 2 different control schemes 
     // makes it easy to switch between the two in Unity
-    public enum Controls {WASD, Arrows, None};
+    public enum Controls {WASD, Arrows};
 
     // allows this script to pull components and variables from TankData
     public TankData pawn;
-    public AudioSource someSound;
     public Controls controls;
 
     ////////////////////////////////////////////////////////////////////////////////////
@@ -79,13 +78,13 @@ public class Inputs : MonoBehaviour
                 }
 
                 // set the movement for Left Arrow to rotate left
-                if (Input.GetKey(KeyCode.K))
+                if (Input.GetKey(KeyCode.LeftArrow))
                 {
                     pawn.mover.Rotate(-pawn.roatationSpeed * Time.deltaTime);
                 }
 
                 // set the movement for Right Arrow to rotate right
-                if (Input.GetKey(KeyCode.L))
+                if (Input.GetKey(KeyCode.RightArrow))
                 {
                     pawn.mover.Rotate(pawn.roatationSpeed * Time.deltaTime);
                 }
@@ -97,5 +96,11 @@ public class Inputs : MonoBehaviour
     }
 
     ////////////////////////////////////////////////////////////////////////////////////
-    
+
+    public void OnTriggerEnter(Collider other)
+    {
+        UIHealth.healthValue -= 1;
+    }
+
+
 }

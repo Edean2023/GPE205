@@ -2021,21 +2021,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8837543360701187390, guid: d191839883d9c1243a51a8b2e41c6cde,
-        type: 3}
-      propertyPath: patrolpoints.Array.data[0]
-      value: 
-      objectReference: {fileID: 7773298803581039384}
-    - target: {fileID: 8837543360701187390, guid: d191839883d9c1243a51a8b2e41c6cde,
-        type: 3}
-      propertyPath: patrolpoints.Array.data[1]
-      value: 
-      objectReference: {fileID: 4596648615044645035}
-    - target: {fileID: 8837543360701187390, guid: d191839883d9c1243a51a8b2e41c6cde,
-        type: 3}
-      propertyPath: patrolpoints.Array.data[2]
-      value: 
-      objectReference: {fileID: 6053953676273717609}
     - target: {fileID: 6707202074079978331, guid: d191839883d9c1243a51a8b2e41c6cde,
         type: 3}
       propertyPath: patrolpoints.Array.data[0]
@@ -2056,6 +2041,21 @@ PrefabInstance:
       propertyPath: patrolpoints.Array.data[3]
       value: 
       objectReference: {fileID: 3039420765465913705}
+    - target: {fileID: 8837543360701187390, guid: d191839883d9c1243a51a8b2e41c6cde,
+        type: 3}
+      propertyPath: patrolpoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 7773298803581039384}
+    - target: {fileID: 8837543360701187390, guid: d191839883d9c1243a51a8b2e41c6cde,
+        type: 3}
+      propertyPath: patrolpoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 4596648615044645035}
+    - target: {fileID: 8837543360701187390, guid: d191839883d9c1243a51a8b2e41c6cde,
+        type: 3}
+      propertyPath: patrolpoints.Array.data[2]
+      value: 
+      objectReference: {fileID: 6053953676273717609}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d191839883d9c1243a51a8b2e41c6cde, type: 3}
 --- !u!4 &2965341077358484008 stripped
@@ -2131,12 +2131,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4519136122016497207, guid: a558cafc01a8b924781374dc78787f1b,
+    - target: {fileID: 7739963247739230055, guid: a558cafc01a8b924781374dc78787f1b,
         type: 3}
       propertyPath: patrolpoints.Array.data[0]
       value: 
       objectReference: {fileID: 2970479815546206585}
-    - target: {fileID: 7739963247739230055, guid: a558cafc01a8b924781374dc78787f1b,
+    - target: {fileID: 4519136122016497207, guid: a558cafc01a8b924781374dc78787f1b,
         type: 3}
       propertyPath: patrolpoints.Array.data[0]
       value: 

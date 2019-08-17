@@ -14,6 +14,7 @@ TagManager:
   - TankFour
   - TankFive
   - DeathStick
+  - Player 2
   layers:
   - Default
   - TransparentFX
@@ -30,7 +31,7 @@ TagManager:
   - GhostEnemy
   - Walls
   - Powerup
-  - 
+  - Player 2
   - 
   - 
   - 
